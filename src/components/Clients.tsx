@@ -1,4 +1,4 @@
-import { Box, Center, Container, Wrap, WrapItem, Text } from "@chakra-ui/react";
+import { Box, Container, Wrap, WrapItem, Text } from "@chakra-ui/react";
 
 export const Clients = () => {
   return (
