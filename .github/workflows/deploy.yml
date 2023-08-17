@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.node-version}}
-          cache: "pnpm"
+          cache: "npm"
 
       # - name: Restore node_modules from cache
       #   uses: actions/cache@v2
@@ -32,10 +32,10 @@ jobs:
       #     key: ${{runner.os}}-${{hashFiles('**/pnpm-lock.yaml')}}
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Build
-        run: pnpm run build
+        run: npm run build
 
       - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
