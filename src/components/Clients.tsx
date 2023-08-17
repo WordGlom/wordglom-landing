@@ -15,7 +15,7 @@ export const Clients = () => {
           w="full"
         >
           <WrapItem>
-            <Text>Here can be your company</Text>
+            <Text>Here can be your company.</Text>
           </WrapItem>
         </Wrap>
       </Container>
